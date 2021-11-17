@@ -1,0 +1,759 @@
+html {
+    height: -webkit-fill-available;
+    font-size: 18px;
+    line-height: 1.67rem;
+    background-color: #fffefe;
+
+}
+
+h1, h2, h3, nav>ul>li>a {
+    color: #6B5B57;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+}
+#hidden{
+    display: none;
+}
+a {
+    color: #752C49;
+}
+
+h1 {
+    font-size: 2.369rem;
+}
+
+h2 {
+    font-size: 1.777rem
+}
+
+h3 {
+    font-size: 1.366rem;
+}
+
+p, li, ol, ul {
+    color: #6B5B57;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+footer {
+    /* width: 100%; */
+    text-align: center;
+    display: block;
+    padding: 1.67rem;
+    background-color: #6B5B57;
+}
+
+footer>p {
+    color: white;
+    font-family: adobe-garamond-pro, serif;
+    letter-spacing: .06rem;
+}
+
+header {
+    background-color: #B8AAA0;
+    top: 0;
+    position: sticky;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.MyInfo {
+    display: none;
+}
+
+nav {
+    top: 0;
+    position: sticky;
+    color: white;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav>ul>li>a:active {
+    text-decoration: underline;
+}
+
+#NavLogo {
+    align-self: center;
+    padding-left: 20px;
+    justify-self: flex-start;
+    display: block;
+}
+
+#currentPage::after {
+    content: '   <'
+}
+
+#NavLogo img {
+    height: 7vh;
+}
+
+
+#BurgerMenu {
+    justify-self: flex-end;
+    padding: 15px 15px 15px 0;
+    text-decoration: none;
+    color: white;
+}
+
+#BurgerIcon {
+    display: block;
+}
+
+#CloseMenuIcon {
+    display: none;
+}
+
+#navlinks {
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    flex-basis: 100%;
+    justify-self: center;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    /* background-color: darkgray; */
+    padding: 0 10vw;
+}
+
+#mainBody {
+    /* background-color: darkgrey; */
+    margin-top: 20vh;
+    padding: 0 5vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+/* #mainBody .PageIntro {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column nowrap;
+} */
+
+.PageIntro {
+    margin-bottom: 3rem;
+}
+
+.PageIntro p {
+    line-height: 1.33rem;
+    padding: .2rem;
+    margin-left: 20vw;
+    margin-right: 2rem;
+}
+
+
+#PageTitle {
+    top: 50vh;
+    margin-bottom: .5rem;
+}
+
+#introOffset {
+    padding: 0;
+    line-height: 0rem;
+    text-indent: 2rem;
+}
+
+#hello {
+    font-family: adobe-garamond-pro, serif;
+    font-style: italic;
+    margin-top: 10vh;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-left: 10vw;
+    line-height: 2.2rem;
+
+}
+
+.Project_Highlights {
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 100%;
+}
+
+.SectionHeader {
+    padding-right: 0;
+
+}
+
+.PapersSection {
+    border-bottom: 1px solid black;
+    margin-bottom: -.4rem;
+}
+
+.PapersSection>h2, .SectionHeader> h2 {
+    margin-bottom: -.39rem;
+}
+
+#viewalldes {
+    font-size: .75rem;
+}
+
+.section_divider {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    border-top: solid 2px #6B5B57;
+}
+
+li {
+    list-style-type: none;
+}
+
+.Project,
+.PapersList {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 6vh 0;
+}
+
+
+.Project_Highlights:nth-child(2) {
+    margin-top: 5vh;
+}
+
+.projectIntro {
+    display: flex;
+    align-items: baseline;
+}
+
+.ProjectTitle,
+.PaperTitle {
+    padding-bottom: .66rem;
+    flex-basis: 100%;
+    padding-right: 1.777rem;
+}
+
+.ProjectDescription {
+    padding-bottom: 1.66rem;
+    /* flex-shrink: 0; */
+}
+
+.viewProject {
+    line-height: 1.67rem;
+    flex-shrink: 0;
+}
+
+.ProjectImage {
+    display: block;
+    margin: 0 auto;
+    /* padding-left: 10vw; */
+    /* flex-basis: 100%; */
+    max-width: 100%;
+}
+
+.ProjectImageContainer {
+    align-self: center;
+
+}
+
+#untitledimg {
+    /* flex-basis: 100%; */
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    background-color: rgb(29, 29, 29);
+    -moz-box-shadow: inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow: inset 0 0 20px #000000;
+    align-self: center;
+    width: 100vw;
+}
+
+#untitledimg>img {
+
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    max-width: 80%;
+
+}
+
+.quick_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: .66rem;
+    margin-left: .33rem;
+}
+/* .quick_info> li{
+    margin: .66rem
+} */
+.qi_label{
+    padding-top: 1.333rem;
+    margin-bottom: -.16rem;
+}
+.qi_underline{
+    border-top: solid 1px #6B5B5780;
+    margin: 0;
+}
+.clientSubBullet, .Team, .design_categorys{
+    margin-top: .66rem;
+    line-height: 1.33rem;
+
+    /* padding-bottom: .6rem; */
+}
+
+
+.clientSubBullet{
+    line-height: 1rem;
+}
+
+#Powing .ProjectTitle {
+    color: red;
+}
+
+#Powing .quick_info {
+    margin-top: 0;
+    flex-flow: column nowrap;
+}
+
+#Powing .ProjectImage {
+    margin-bottom: 1.777rem;
+    padding-left: 0;
+    width: auto;
+    border: 1px solid darkgrey
+}
+
+#adobe-dc-view {
+    height: 90vh;
+}
+
+.Paperli {
+    text-indent: 1rem;
+}
+
+.PaperTopicList,
+.PaperCategory {
+    padding-top: 1rem;
+}
+
+#NavAid {
+
+    position: fixed;
+    bottom: 50px;
+    left: 5vw;
+    display: none;
+    flex-flow: column wrap;
+}
+
+.button img {
+    width: 50px;
+}
+
+.button {
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 1rem;
+
+}
+
+.PaperTopicList {
+    padding-bottom: 1rem;
+}
+
+/*
+Okay so the BIG difference is that I need to change the nav to a horizontal one
+that is laid out already.
+    SO:
+        Navlinks should be displayed
+            navLinks should be row no wrap space between
+
+        both icons need to be hidden
+        the myInfo section needs to be hidden
+        The nav logo needs to be shown
+
+Next is the issue of each project needing to be remade:
+    Title and description need to be in one row
+    Second row needs to be image and quick info
+        This probably needs to be flex (or not)
+        photo on left, quickInfo on right.
+
+About me Page should be built at this point.
+*/
+
+@media screen and (min-width:850px) {
+
+    .container {
+        max-width: auto;
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        column-gap: 1rem;
+    }
+
+    #BurgerIcon {
+        display: none;
+    }
+
+    #CloseMenuIcon {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        grid-column: 1 / span 1;
+        max-height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .MyInfo {
+        justify-self: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1rem;
+        /* width: 80%; */
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: flex-start;
+        /* justify-content: center; */
+
+    }
+
+    .MyInfo * {
+        color: white;
+    }
+
+    .MyInfo *:not(#HeaderLogo>img, #HeaderLogo) {
+        padding-left: .333rem;
+    }
+
+    .MyInfo h1 {
+        font-size: 1.333rem;
+        width: auto;
+
+    }
+    #HeaderLogo{
+        width: 60%;
+    }
+    #HeaderLogo>img {
+        width: 100%;
+    }
+
+    #nav {
+        justify-self: center;
+        padding-left: 1rem;
+        height: auto;
+        margin-top: 8.3333vh;
+        flex-basis: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        text-decoration: none;
+    }
+
+    #navlinks {
+
+        min-height: auto;
+        /* flex-basis: 100%; */
+        justify-self: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        row-gap: 1rem;
+        /* background-color: darkgray; */
+        padding: 0;
+        padding-left: .333rem;
+
+    }
+
+    .indvNavLink {
+        color: #eee4de;
+        width: auto;
+        font-size: 1rem;
+
+    }
+
+    #currentPage::after {
+        color: rgba(29, 29, 29, 0);
+        content: none;
+    }
+
+    #currentPage {
+        font-size: 1.333rem;
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .indvNavLink:hover,
+    #currentPage:hover {
+        text-decoration: underline;
+        color: white;
+        text-decoration-thickness: 3px;
+        font-size: 1.6777rem;
+    }
+
+    #NavLogo {
+        display: none;
+    }
+
+    #mainBody {
+        padding-left: 0;
+        width: auto;
+        grid-column: 2/ span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Project,
+    .PapersList {
+        grid-column: 1 / span 1;
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1.5fr;
+        column-gap: 2rem;
+    }
+
+    .ProjectImageContainer {
+        grid-column: 2 / span 1;
+        align-self: start;
+
+    }
+
+    .ProjectImage {
+
+        display: inline;
+        margin: 0;
+        /* padding-left: 10vw; */
+        /* flex-basis: 100%; */
+        max-width: 100%;
+    }
+
+    #untitledimg {
+        align-self: start;
+        width: auto;
+        height: 100%;
+    }
+
+    #untitledimg>img {
+        margin: 0;
+        margin: auto;
+        padding: 0;
+        max-width: 100%;
+
+    }
+    .quick_info, #Powing .quick_info{
+        margin-top: -.666rem;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+
+    }
+    /* .Team > ul > li:first-child{
+        margin-bottom: .333rem;
+    } */
+    .clientSubBullet, .TeamMembers{
+        padding-left: 0;
+    }
+    .design_categorys, .PaperCategory{
+        padding-top: 0;
+    }
+
+
+
+
+
+}
+
+/*
+Ignore Bellow~ (I made the tablet view as the desktop so I just copy-pastaed,
+will fix later
+*/
+
+@media screen and (min-width:1050px) {
+
+    .container {
+        max-width: auto;
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        column-gap: 1rem;
+    }
+
+    #BurgerIcon {
+        display: none;
+    }
+
+    #CloseMenuIcon {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        grid-column: 1 / span 1;
+        max-height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .MyInfo {
+        justify-self: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1rem;
+        /* width: 80%; */
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: flex-start;
+        /* justify-content: center; */
+
+    }
+
+    .MyInfo * {
+        color: white;
+    }
+
+    .MyInfo *:not(#HeaderLogo>img, #HeaderLogo) {
+        padding-left: .333rem;
+    }
+
+    .MyInfo h1 {
+        font-size: 1.333rem;
+        width: auto;
+
+    }
+    #HeaderLogo{
+        width: 60%;
+    }
+    #HeaderLogo>img {
+        width: 100%;
+    }
+
+    #nav {
+        justify-self: center;
+        padding-left: 1rem;
+        height: auto;
+        margin-top: 8.3333vh;
+        flex-basis: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        text-decoration: none;
+    }
+
+    #navlinks {
+
+        min-height: auto;
+        /* flex-basis: 100%; */
+        justify-self: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        row-gap: 1rem;
+        /* background-color: darkgray; */
+        padding: 0;
+        padding-left: .333rem;
+
+    }
+
+    .indvNavLink {
+        color: #eee4de;
+        width: auto;
+        font-size: 1rem;
+
+    }
+
+    #currentPage::after {
+        color: rgba(29, 29, 29, 0);
+        content: none;
+    }
+
+    #currentPage {
+        font-size: 1.333rem;
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .indvNavLink:hover,
+    #currentPage:hover {
+        text-decoration: underline;
+        color: white;
+        text-decoration-thickness: 3px;
+        font-size: 1.6777rem;
+    }
+
+    #NavLogo {
+        display: none;
+    }
+
+    #mainBody {
+        padding-left: 0;
+        width: auto;
+        grid-column: 2/ span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Project,
+    .PapersList {
+        grid-column: 1 / span 1;
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1.5fr;
+        column-gap: 2rem;
+    }
+
+    .ProjectImageContainer {
+        grid-column: 2 / span 1;
+        align-self: start;
+
+    }
+
+    .ProjectImage {
+
+        display: inline;
+        margin: 0;
+        /* padding-left: 10vw; */
+        /* flex-basis: 100%; */
+        max-width: 100%;
+    }
+
+    #untitledimg {
+        align-self: start;
+        width: auto;
+        height: 100%;
+    }
+
+    #untitledimg>img {
+        margin: 0;
+        margin: auto;
+        padding: 0;
+        max-width: 100%;
+
+    }
+    .quick_info, #Powing .quick_info{
+        margin-top: -.666rem;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+
+    }
+    /* .Team > ul > li:first-child{
+        margin-bottom: .333rem;
+    } */
+    .clientSubBullet, .TeamMembers{
+        padding-left: 0;
+    }
+    .design_categorys, .PaperCategory{
+        padding-top: 0;
+    }
+
+
+
+
+
+}
